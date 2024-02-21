@@ -14,7 +14,7 @@ Our evaluation demonstrates that RoSÉ holistically captures the closed-loop int
 
 In summary, this project makes the following contributions:
 
-* We build RoSÉ, a hardware-software co-simulation infrastructure for pre-silicon, full-stack evaluation of robotics UAV SoCs. RoSÉ captures the dynamic interactions between robotic hardware, software, and environment\footnote{We commit to an open-source release of the RoSÉ framework.
+* We build RoSÉ, a hardware-software co-simulation infrastructure for pre-silicon, full-stack evaluation of robotics UAV SoCs. RoSÉ captures the dynamic interactions between robotic hardware, software, and environment\footnote{We commit to an open-source release of the RoSÉ framework.}
 
 * We design software algorithms, and hardware SoCs along with robotic environments, to holistically evaluate the co-design trade-off in robotic UAV systems using RoSÉ.
 
@@ -94,11 +94,11 @@ Begin by installing FireSim  by running the following commands within the RoSÉ 
 ```
     git submodule update --init ./soc/sim/firesim
     cd ./soc/sim/firesim
-    conda update -n base -c defaults conda
-    conda install anaconda::fabric
     ./scripts/machine-launch-script.sh --prefix [INSERT_CONDA_DIRECTORY_HERE]
     ./build-setup.sh
     source sourceme-manager.sh --skip-ssh-setup
+    conda update -n base -c defaults conda
+    conda install anaconda::fabric
     firesim managerinit --platform xilinx_alveo_u250
 ```
 ### RoSÉ Installation
