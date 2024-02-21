@@ -94,6 +94,8 @@ Begin by installing FireSim  by running the following commands within the RoSÉ 
 ```
     git submodule update --init ./soc/sim/firesim
     cd ./soc/sim/firesim
+    conda update -n base -c defaults conda
+    conda install anaconda::fabric
     ./scripts/machine-launch-script.sh --prefix [INSERT_CONDA_DIRECTORY_HERE]
     ./build-setup.sh
     source sourceme-manager.sh --skip-ssh-setup
